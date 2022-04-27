@@ -1,12 +1,99 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
-
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-
-</body>
+  <head>
+    <title>Template</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--internal CSS below-->
+    <style> 
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+      }
+      .header-menu,
+      footer {
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+      .header-menu {
+        justify-content: flex-end;
+        height: 60px;
+        background: #000000;
+        color: #f2f2f2;
+      }
+      h2 {
+        margin: 0 0 8px;
+        color: #f2f2f2;
+        background: #000000
+      }
+      ul li {
+        display: inline-block;
+        padding: 0 10px;
+        list-style: none;
+        background: #000000
+        color: #f2f2f2
+        
+      }
+      aside {
+        flex: 0.4;
+        height: 165px;
+        padding-left: 15px;
+        border-left: 1px solid #666;
+        background: #000000
+        color: #3333ff
+        
+      }
+      section {
+        flex: 1;
+        padding-right: 15px;
+        color: #3333ff;
+      }
+      footer {
+        padding: 0 10px;
+        background: #000000;
+        color: #999999;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header-menu">
+      <nav>
+        <ul>
+           <li><a href="index.html">Home</a></li>
+          <li><a href="Team.html">Team</a></li>
+          <li><a href= "Player.html">Player</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <article>
+        <header>
+          <h2>Baseball</h2>
+          <small>Team</small>
+        </header>
+        <p>Brooklyn Dodgers</p>
+      </article>
+      <article>
+        <header>
+          <h2>Baseball</h2>
+          <small>Player</small>
+        </header>
+        <p>Jackie Robinson</p>
+      </article>
+    </section>
+    <aside>
+      <h2>Life</h2>
+      <p>About</p>
+      <p>Accolades</p>
+      <p>Career</p>
+      <p>Legacy</p>
+    </aside>
+    <footer>
+    </footer>
+  </body>
 </html>
